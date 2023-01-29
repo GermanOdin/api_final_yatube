@@ -96,4 +96,8 @@ GET .../api/v1/groups/2/
     "slug": "math",
     "description": "Посты на тему математики"
 } 
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> d805f1cebb9902568f13f8d1f3ae514945381eac
