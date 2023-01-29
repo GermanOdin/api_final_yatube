@@ -10,7 +10,7 @@ Yatube - это учебный проект курса "backend-python" от Я�
 
 *Клонировать репозиторий и перейти в него в командной строке:*
 ```
-git clone https://github.com/VadimVolkovsky/api_final_yatube.git
+git clone https://github.com/GermanOdin/api_final_yatube
 ```
 ```
 cd api_final_yatube/
@@ -96,8 +96,4 @@ GET .../api/v1/groups/2/
     "slug": "math",
     "description": "Посты на тему математики"
 } 
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> d805f1cebb9902568f13f8d1f3ae514945381eac
