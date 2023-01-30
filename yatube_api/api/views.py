@@ -57,12 +57,11 @@ class FollowViewSet(viewsets.ModelViewSet):
     permission_classes = (permissions.IsAuthenticated,)
     filter_backends = (DjangoFilterBackend, filters.SearchFilter,
                        filters.OrderingFilter)
-    search_fields = ('following__username',)
+    search_fields = ('following__username', 'user__username',)
     ordering_fields = ('following__username',)
 
     def perform_create(self, serializer):
         return serializer.save(user=self.request.user)
 
     def get_queryset(self):
-        queryset = Follow.objects.filter(user=self.request.user)
-        return queryset
+        return self.request.user.follower.all()
